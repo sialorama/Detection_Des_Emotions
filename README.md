@@ -35,7 +35,7 @@ https://drive.google.com/file/d/1HafN_24_J81g_F1aEC_IifvRXDyl2vvp/view?usp=shari
 ![Accuracy plot](plot.png)
 
 
-## Algorithme
+## Algorithme:
 
 * Tout d'abord, la méthode "haar cascade" est utilisée pour détecter les visages dans chaque image du flux webcam.
 
@@ -45,8 +45,8 @@ https://drive.google.com/file/d/1HafN_24_J81g_F1aEC_IifvRXDyl2vvp/view?usp=shari
 
 * L'émotion avec le score maximum est affichée à l'écran.
 
-## Exemple de sortie
+## Exemple de sortie:
 
-![fearful](images/fearful.png)
 ![happy](images/happy.png)
 ![surprised](images/surprised.png)
+![fearful](images/fearful.png)
