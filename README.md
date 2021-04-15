@@ -34,30 +34,19 @@ https://drive.google.com/file/d/1HafN_24_J81g_F1aEC_IifvRXDyl2vvp/view?usp=shari
 
 ![Accuracy plot](plot.png)
 
-## Data Preparation (optional)
 
-* The [original FER2013 dataset in Kaggle](https://www.kaggle.com/deadskull7/fer2013) is available as a single csv file. I had converted into a dataset of images in the PNG format for training/testing and provided this as the dataset in the previous section.
+## Algorithme
 
-* In case you are looking to experiment with new datasets, you may have to deal with data in the csv format. I have provided the code I wrote for data preprocessing in the `dataset_prepare.py` file which can be used for reference.
+* Tout d'abord, la méthode "haar cascade" est utilisée pour détecter les visages dans chaque image du flux webcam.
 
-## Algorithm
+* La région de l'image contenant le visage est redimensionnée en "48x48" et transmise en entrée au CNN.
 
-* First, the **haar cascade** method is used to detect faces in each frame of the webcam feed.
+* Le réseau produit une liste de "scores softmax" pour les sept classes d'émotions.
 
-* The region of image containing the face is resized to **48x48** and is passed as input to the CNN.
+* L'émotion avec le score maximum est affichée à l'écran.
 
-* The network outputs a list of **softmax scores** for the seven classes of emotions.
+## Exemple de sortie
 
-* The emotion with maximum score is displayed on the screen.
-
-## Example Output
-
-![Mutiface](imgs/multiface.png)
-
-## References
-
-* "Challenges in Representation Learning: A report on three machine learning contests." I Goodfellow, D Erhan, PL Carrier, A Courville, M Mirza, B
-   Hamner, W Cukierski, Y Tang, DH Lee, Y Zhou, C Ramaiah, F Feng, R Li,  
-   X Wang, D Athanasakis, J Shawe-Taylor, M Milakov, J Park, R Ionescu,
-   M Popescu, C Grozea, J Bergstra, J Xie, L Romaszko, B Xu, Z Chuang, and
-   Y. Bengio. arXiv 2013.
+![fearful](images/fearful.png)
+![happy](images/happy.png)
+![surpised](images/surpised.png)
