@@ -49,4 +49,4 @@ https://drive.google.com/file/d/1HafN_24_J81g_F1aEC_IifvRXDyl2vvp/view?usp=shari
 
 ![fearful](images/fearful.png)
 ![happy](images/happy.png)
-![surpised](images/surpised.png)
+![surprised](images/surprised.png)
