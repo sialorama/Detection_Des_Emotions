@@ -20,7 +20,7 @@ pip installer opencv-python
 
 * Pour cloner le projet sur votre ordinateur à partir d'un terminal:
 ```bash
-git clone https://github.com/atulapra/Emotion-detection.git
+git clone https://github.com/sialorama/Detection_des-_emotions.git
 cd mon_dossier
 ```
 
