@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ce projet vise à classer l'émotion sur le visage d'une personne dans l'une des "sept catégories", en utilisant des réseaux de neurones convolutifs profonds. Le modèle est formé sur l'ensemble de données. Cet ensemble de données se compose de 28716 images de visage en niveaux de gris et de taille 48x48 avec ```sept émotions``` - en ```colère```, ```dégoûté```, ```craintif```, ```heureux```, ```neutre```, ```triste``` et ```surpris```.
+Ce projet vise à classer l'émotion sur le visage d'une personne dans l'une des "sept catégories", en utilisant des réseaux de neurones convolutifs profonds. Le modèle est formé sur l'ensemble de données. Cet ensemble de données se compose de 28716 images de visage en niveaux de gris et de taille 48x48 avec ```sept émotions```:```en colère```, ```dégoûté```, ```craintif```, ```heureux```, ```neutre```, ```triste``` et ```surpris```.
 
 ## Dépendances:
 
