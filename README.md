@@ -1,51 +1,38 @@
-# Emotion detection using deep learning
+# Détection des émotions en temps réel à l'aide du deep learning.
 
 ## Introduction
 
-This project aims to classify the emotion on a person's face into one of **seven categories**, using deep convolutional neural networks. The model is trained on the **FER-2013** dataset which was published on International Conference on Machine Learning (ICML). This dataset consists of 35887 grayscale, 48x48 sized face images with **seven emotions** - angry, disgusted, fearful, happy, neutral, sad and surprised.
+Ce projet vise à classer l'émotion sur le visage d'une personne dans l'une des "sept catégories", en utilisant des réseaux de neurones convolutifs profonds. Le modèle est formé sur l'ensemble de données. Cet ensemble de données se compose de 28716 images de visage en niveaux de gris et de taille 48x48 avec "sept émotions" - en colère, dégoûté, craintif, heureux, neutre, triste et surpris.
 
-## Dependencies
+## Dépendances:
+
+* Pour installer les packages requis, exécutez:
+pip installer numpy
+pip installer des pandas
+pip installer tensorflow
+pip installer keras
+pip installer opencv-python
 
 * Python 3, [OpenCV](https://opencv.org/), [Tensorflow](https://www.tensorflow.org/)
-* To install the required packages, run `pip install -r requirements.txt`.
 
-## Basic Usage
 
-The repository is currently compatible with `tensorflow-2.0` and makes use of the Keras API using the `tensorflow.keras` library.
+## Utilisation de base:
 
-* First, clone the repository and enter the folder
-
+* Pour cloner le projet sur votre ordinateur à partir d'un terminal:
 ```bash
 git clone https://github.com/atulapra/Emotion-detection.git
-cd Emotion-detection
+cd mon_dossier
 ```
 
-* Download the FER-2013 dataset from [here](https://drive.google.com/file/d/1X60B-uR3NtqPd4oosdotpbDgy8KOfUdr/view?usp=sharing) and unzip it inside the `src` folder. This will create the folder `data`.
+Le projet est compatible avec `tensorflow-2.0` et utilise l'API Keras en utilisant la bibliothèque` tensorflow.keras`.
 
-* If you want to train this model, use:  
+*Pour télécharger le model pré-entrainé 'model.h5' suivez ce lien:
+https://drive.google.com/file/d/1HafN_24_J81g_F1aEC_IifvRXDyl2vvp/view?usp=sharing
 
-```bash
-cd src
-python emotions.py --mode train
-```
 
-* If you want to view the predictions without training again, you can download the pre-trained model from [here](https://drive.google.com/file/d/1FUn0XNOzf-nQV7QjbBPA6-8GLoHNNgv-/view?usp=sharing) and then run:  
+* Cette implémentation détecte par défaut les émotions sur tous les visages dans le flux de la webcam. Avec un CNN à 4 couches, la précision du test a atteint 63,2% en 50 époques.
 
-```bash
-cd src
-python emotions.py --mode display
-```
-
-* The folder structure is of the form:  
-  src:
-  * data (folder)
-  * `emotions.py` (file)
-  * `haarcascade_frontalface_default.xml` (file)
-  * `model.h5` (file)
-
-* This implementation by default detects emotions on all faces in the webcam feed. With a simple 4-layer CNN, the test accuracy reached 63.2% in 50 epochs.
-
-![Accuracy plot](imgs/accuracy.png)
+![Accuracy plot](plot.png)
 
 ## Data Preparation (optional)
 
