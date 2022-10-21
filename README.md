@@ -9,11 +9,11 @@ Le modèle est formé sur l'ensemble de données. Cet ensemble de données se co
 
 * Pour installer les packages requis, exécutez:
 ```bash
-pip installer numpy
-pip installer des pandas
-pip installer tensorflow
-pip installer keras
-pip installer opencv-python
+pip install numpy
+pip install des pandas
+pip install tensorflow
+pip install keras
+pip install opencv-python
 ```
 * Python 3, [OpenCV](https://opencv.org/), [Tensorflow](https://www.tensorflow.org/)
 
